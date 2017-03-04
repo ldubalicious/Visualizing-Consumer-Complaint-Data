@@ -1,0 +1,262 @@
+html {
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin: 25px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 25px;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 25px;
+}
+
+h4 {
+  margin-left: 25px;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #D4D4D4;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  padding: 0px 25px 0px 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.instructions {
+  font-size: .8em;
+  color: #D4D4D4;
+  font-style: italic;
+}
+
+.placeholder {
+  width: 560px;
+  height: 375px;
+  padding: 50px 100px 50px 50px;
+  margin-top: 15px;
+  background-color: #D4D4D4;
+  position: absolute;
+}
+
+#timeseries {
+  width: 50%;
+  height: 650px;
+  padding: 35px 100px 50px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  display: block;
+}
+
+#product {
+  width: 50%;
+  height: 650px;
+  padding: 50px 100px 200px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  display: block;
+}
+
+.pagedescription {
+  margin: 0px 25px 0px 25px;
+  padding: 2% 0% 5% 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+  float: left;
+}
+
+#labeldivs {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  float: left;
+  width: 35%;
+  font-size: .9em;
+}
+
+#articles {
+  padding-top: 350px;
+  float: left;
+  width: 35%;
+}
+
+.article {
+  width: 33%;
+  padding: 4%;
+  margin: 10px;
+  float: right;
+  background-color: #F8F8F8;
+  font-size: .8em;
+  text-align: left;
+}
+
+.article p {
+  padding: 0px;
+}
+
+.label {
+  margin: 25px;
+  padding-top: 10px;
+  margin-left: 75px;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  text-align: right;
+  display: none;
+}
+
+/*set title font colors to correspond with data*/
+
+#bankacct_title {
+  color: #FF6138;
+}
+
+#consumerloan_title {
+  color: #BEEB9F;
+}
+
+#creditcard_title {
+  color: #1FAAE3;
+}
+
+#creditreporting_title {
+  color: #FFFF9D;
+}
+
+#debtcollection_title {
+  color: #5B415C;
+}
+
+#moneytransfer_title {
+  color: #DCDBDB;
+}
+
+#mortgage_title {
+  color: #79BD8F;
+}
+
+#other_title {
+  color: #CD21AE;
+}
+
+#payday_title {
+  color: #00A388;
+}
+
+#prepaid_title {
+  color: #FFA83F;
+}
+
+.date {
+  font-size: .7em;
+  padding: 0px;
+}
+
+.sectiontitle {
+  margin-bottom: 15px;
+  width: 100%;
+  float: left;
+}
+
+.datapt {
+  margin:.5px;
+  width: 5px;
+  height: 5px;
+  border-width: 1px;
+  border-color: white;
+  float: left;
+}
+
+button {
+  width: auto;
+  float: left;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.bankacct_color {
+  background-color: #FF6138;
+}
+
+.consumerloan_color {
+  background-color: #BEEB9F;
+}
+
+.creditcard_color {
+  background-color: #1FAAE3;
+}
+
+.creditreporting_color {
+  background-color: #FFFF9D;
+}
+
+.debtcollection_color {
+  background-color: #5B415C;
+}
+
+.moneytransfer_color {
+  background-color: #DCDBDB;
+}
+
+.mortgage_color {
+  background-color: #79BD8F;
+}
+
+.other_color {
+  background-color: #CD21AE;
+}
+
+.paydayloan_color {
+  background-color: #00A388;
+}
+
+.prepaid_color {
+  background-color: #FFA83F;
+}
+
+/*loading wheel*/
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  position: relative;
+  top: 120px;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

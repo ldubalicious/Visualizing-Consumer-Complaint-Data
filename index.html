@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head
+    <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans:300|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  </head>
+
+  <body>
+      <header>
+        <div class="pagedescription">
+          <h1>The <a href="https://www.consumerfinance.gov/">Consumer Financial Protection Bureau</a> is a government agency created in the wake of the 2008 financial crisis
+          to ensure that banks, lenders, and other financial companies treat American consumers fairly.
+          </h1>
+
+          <p>In July 2011, the CFPB began collecting consumer complaints against financial institutions.
+            Now, the Consumer Complaint Database is a collection of 711,381 complaints, on a range of consumer
+            financial products and services, sent to nearly 3,000 companies for response.
+          </p>
+          <p>The data shown here is pulled from the CFPB's <a href="https://cfpb.github.io/api/ccdb/"> Consumer Complaint Database API</a> and the <a href="https://developer.nytimes.com/article_search_v2.json"> New York Times API.</a></p>
+        </div>
+      </header>
+
+      <div id="timeseries">
+        <div class="sectiontitle"><h2>All Complaints over Time</h2>
+          <p>This chart displays the last 10,000 consumer complaints filed. The color of each data point corresponds
+            to the product about which the consumer submitted a complaint.
+          <p class="instructions">For more detail about each product type, see the <b>Complaints by Product Type</b> chart below.</p>
+          </p>
+        <div class="placeholder">
+          <div class="loader"></div>
+        </div>
+        </div>
+      </div>
+
+      <div id="product">
+        <div class="sectiontitle">
+          <h2>Complaints by Product Type</h2>
+          <p>The following displays the same 10,000 observations as above organized by the type of financial product
+            about which complaints were submitted.</p>
+
+            <p class="instructions">Click on any section below to display more details about the the <b>types
+            of consumer complaints</b> submitted in each product category and <b>news stories related to the product type.</b></p>
+
+          <div class="placeholder">
+            <div class="loader"></div>
+          </div></div>
+
+          <div id="bankacct"></div>
+          <div id="consumerloan"></div>
+          <div id="creditcard"></div>
+          <div id="creditreporting"></div>
+          <div id="debtcollection"></div>
+          <div id="moneytransfer"></div>
+          <div id="mortgage"></div>
+          <div id="other"></div>
+          <div id="payday"></div>
+          <div id="prepaid"></div>
+      </div>
+
+      <!-- hidden labels, shown on click -->
+      <div id=labeldivs>
+        <div id="bankacct" class="label">
+          <h3 id="bankacct_title">Bank Account or Service</h3>
+            <p>The most common types of bank account or service complaints reported by consumers include
+              account opening, closing, or management; Deposits and withdrawals; Making or receiving payments,
+              sending money to others; Problems caused by funds being low; and using a debit or ATM card.</p>
+          <h3 id="bankacct_title">Latest News</h3>
+        </div>
+
+        <div id="consumerloan" class="label">
+          <h3 id="consumerloan_title">Consumer Loan</h3>
+            <p>The most common types of consumer loan complaints included managing the loan, lease or line of credit;
+              problems when unable to pay; taking out the loan or lease and account terms and changes; and shopping for a loan, lease or line of credit.</p>
+            <h3 id="consumerloan_title">Latest News</h3>
+        </div>
+
+        <div id="creditcard" class="label">
+          <h3 id="creditcard_title">Credit Card</h3>
+            <p>The most common types of credit card complaints reported by consumers included
+              billing disputes; other; identity theft, fraud or embezzlement; closing or cancelling an account;
+              delinquent accounts; customer service or relations; APR or interest rate; advertising and marketing;
+              late fees; and transaction issues.</p>
+          <h3 id="creditcard_title">Latest News</h3>
+        </div>
+
+        <div id="creditreporting" class="label">
+          <h3 id="creditreporting_title">Credit Reporting</h3>
+            <p>The most common types of credit reporting compalints reported by consumers included
+              incorrect information on a credit report; credit reporting company's investigation;
+            inability to get credit report or score; improper use of credit reporting; and credit monitoring
+            or identity services.</p>
+          <h3 id="creditreporting_title">Latest News</h3>
+        </div>
+
+        <div id="debtcollection" class="label">
+          <h3 id="debtcollection_title">Debt Collection</h3>
+            <p>The most common types of debt collection complaints reported by consumers included
+            continued attempts to collect debt not owed; communication tactics; disclosure verification of debt;
+            threatening an illegal action; false statements or representation; and improper contact or sharing of information.</p>
+          <h3 id="debtcollection_title">Latest News</h3>
+      </div>
+
+        <div id="moneytransfer" class="label">
+          <h3 id="moneytransfer_title">Money Transfers</h3>
+            <p>The most common types of money transfer complaints reported by consumers included
+            fraud or scams; other transaction issues; money unavailable when promised; other service issues;
+            wrong amount charged or received; incorrect or missing disclosures or info.</p>
+          <h3 id="moneytransfer_title">Latest News</h3>
+        </div>
+
+        <div id="mortgage" class="label">
+          <h3 id="mortgage_title">Mortgage</h3>
+          <p>The most common types of mortgage complaints reported by consumers included
+            problems when unable to pay; making payments; applying for the loan; signing the agreement;
+            receiving a credit offer; and other.</p>
+            <h3 id="mortgage_title">Latest News</h3>
+        </div>
+
+        <div id="other" class="label">
+          <h3 id="other_title">Other Financial Service</h3>
+            <p>The most common types of other financial service complaints reported by consumers included
+              fraud or scam; customer service; excessive fees; advertising and marketing; disclosures; lost
+              or stolen check; lost or stolen money order; incorrect exchange rate.</p>
+            <h3 id="other_title">Latest News</h3>
+        </div>
+
+        <div id="payday" class="label">
+          <h3 id="payday_title">Payday Loan</h3>
+            <p>The most common types of payday loan complaints reported by consumers included
+              inability to contact the lender; unexepcted fees or interest charged; loan received
+              for which consumer did not apply; applied for a loan but didn't receive money; payment
+              to account not credited; can't stop lender from charging bank account; lender charged bank account
+              on wrong day or for wrong amount.</p>
+          <h3 id="payday_title">Latest News</h3>
+        </div>
+
+        <div id="prepaid" class="label">
+          <h3 id="prepaid_title">Prepaid Card</h3>
+          <p>The most common types of prepaid card complaints reported by consumers included managing, opening,
+            or closing your account; unauthorized transactions or other transaction issues; fraud or scam;
+            adding money; fees; advertising, marketing or disclosures; advertising, marketing or disclosures; and
+            overdraft, savings or rewards features.</p>
+          <h3 id="prepaid_title">Latest News</h3>
+        </div>
+      </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</html>
